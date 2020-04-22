@@ -24,7 +24,7 @@ def find_a(array)
 #i=0
   #while i < array.length
   #  array.each do |a|
-      array.each.reject! if array[0] != "a"
+      array.each.reject{array[0] != "a"}
   #    i += 1
   #  end
   #end
