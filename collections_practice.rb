@@ -18,4 +18,5 @@ def kesha_maker(array)
     array.each do |name|
       name.slice
       puts name
+    end
 end
