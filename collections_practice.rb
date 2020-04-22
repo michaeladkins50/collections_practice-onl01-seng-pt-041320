@@ -31,8 +31,10 @@ def sum_array(array)
 end
 def add_s(array)
   array.collect do |adds|
-    adds + "s" unless adds == array[1] do
+    if adds == array[1]
       adds
+    else
+      adds + "s"
     end
   end
 end
