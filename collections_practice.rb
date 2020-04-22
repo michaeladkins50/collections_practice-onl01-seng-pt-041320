@@ -21,7 +21,11 @@ def kesha_maker(array)
   array
 end
 def find_a(array)
-  array.each do |a|
-    a.reject! if a[0] != "a"
+i=0
+  while i < array.length
+    array.each do |a|
+      array[i].reject! if a[0] != "a"
+      i += 1
+    end
   end
 end
