@@ -33,3 +33,4 @@ def add_s(array)
   array.collect do |adds|
     adds + "s" unless adds == array[1]
   end
+end
