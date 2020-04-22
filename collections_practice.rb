@@ -18,10 +18,7 @@ def kesha_maker(array)
     i=0
     new_array = []
     while i < array.length
-      new_array = array[i].slice
-      puts new_array.inspect
-      new_array[2].replace '$'
-      array[i].replace(new_array)
+      new_array = yield array[i]
       i += 1
       end
 end
