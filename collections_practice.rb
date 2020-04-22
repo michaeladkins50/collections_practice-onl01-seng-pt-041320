@@ -24,4 +24,5 @@ def find_a(array)
   array.each do |a|
     new_array = array.start_with("a")
   end
+  new_array
 end
