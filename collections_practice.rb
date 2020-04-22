@@ -21,5 +21,4 @@ def kesha_maker(array)
     i+=1
   end
   array
-    end
 end
