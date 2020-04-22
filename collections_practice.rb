@@ -15,10 +15,8 @@ def reverse_array(array)
   new_array = array.reverse
 end
 def kesha_maker(array)
-    i=0
-    new_array = []
-    while i < array.length
-      new_array = yield array
-      i += 1
-      end
+  array.each do |name|
+    name[2] = "$"
+  end
+    array
 end
