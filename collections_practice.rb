@@ -15,11 +15,11 @@ def reverse_array(array)
   new_array = array.reverse
 end
 def kesha_maker(array)
-  new_kesha_final = []
-    array.each do |name|
-      new_kesha = name.slice
-      puts new_kesha.inspect
-      new_kesha[2].replace "$"
-      new_kesha_final << new_kesha.join
+  i = 0
+  while i < array.length
+    yield (array[i])
+    i+=1
+  end
+  array
     end
 end
