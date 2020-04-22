@@ -18,7 +18,7 @@ def kesha_maker(array)
     i=0
     new_array = []
     while i < array.length
-      new_array = yield array[i]
+      new_array = yield array
       i += 1
       end
 end
